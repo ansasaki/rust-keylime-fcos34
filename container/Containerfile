@@ -14,7 +14,9 @@ ENV KEYLIME_HOME ${HOME}/keylime
 COPY setup_swtpm.sh /root/
 
 RUN dnf install -y \
+    gcc \
     git \
+    python3-devel \
     python3-cryptography \
     python3-m2crypto \
     python3-pip \
